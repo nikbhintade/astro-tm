@@ -20,7 +20,10 @@ const feturesData = [
     <div class="container">
         {
             feturesData.map((feature) => (
-                <Card title={feature.title} body={feature.body} />
+                <Card>
+                    <h3>{feature.title}</h3>    
+                    <p>{feature.body}</p>
+                </Card>
             ))
         }
     </div>
