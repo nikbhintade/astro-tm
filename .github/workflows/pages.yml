@@ -28,7 +28,9 @@ jobs:
 
     # Not using npm? Change `npm ci` to `yarn install` or `pnpm i`
     - name: Install dependencies
-      run: yarn install --frozen-lockfile
+      run: |
+        npm i -g yarn
+        yarn install --frozen-lockfile
 
     # Not using npm? Change `npm run build` to `yarn build` or `pnpm run build`
     - name: Build Astro
